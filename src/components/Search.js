@@ -7,6 +7,9 @@ const Search = (props) => {
 
     const handleClick = () => {
         if (!query.length) return;
+
+        console.log('Find button was clicked; query =', query);
+
         props.getRepos(query); // calling action getRepos
         setQuery('');
     };

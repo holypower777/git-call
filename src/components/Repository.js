@@ -6,6 +6,7 @@ const Repository = (props) => {
 
     return (
         <a className="repo" href={link} target="_blank" rel="noopener noreferrer">
+            {console.debug(props.repo)}
             <img src="/folder.svg" alt="folder logo"/>
             <div className="repo_info">
                 <div>
